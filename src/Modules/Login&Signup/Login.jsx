@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MyImages from '../../Constants/MyImages.js';
 import MyColors from '../../Constants/MyColors.js';
-import LoginForm from '../../Components/Form/Loginform.jsx';
+import LoginForm from '../../Components/Form/LoginForm.jsx';
 import ForgotPasswordForm from '../../Components/Form/ForgotPasswordForm.jsx';
 import EmailSentCard from '../../Components/Form/EmailSentCard.jsx';
 
