@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa';
+import { RiInstagramFill, RiTwitterXFill } from 'react-icons/ri';
 import MyImages from '../../Constants/MyImages.js';
 import MyColors from '../../Constants/MyColors.js';
 
@@ -14,7 +15,7 @@ const Footer = () => {
             {/* Logo */}
             <div
                 onClick={() => navigate('/')}
-                className='w-40 h-16 bg-no-repeat bg-contain bg-center cursor-pointer hover:scale-110 transition'
+                className='w-40 h-16 bg-no-repeat bg-contain bg-center cursor-pointer hover:scale-110 active:scale-90 transition'
                 style={{ backgroundImage: `url(${MyImages.logo})` }}
             ></div>
 
@@ -37,9 +38,9 @@ const Footer = () => {
                 className='flex gap-4 text-xl'
                 style={{ color: MyColors.white }}
             >
-                <FaTwitter className='cursor-pointer hover:scale-110 transition' />
-                <FaFacebookF className='cursor-pointer hover:scale-110 transition' />
-                <FaInstagram className='cursor-pointer hover:scale-110 transition' />
+                <RiTwitterXFill className='cursor-pointer hover:scale-110 active:scale-90 transition' />
+                <FaFacebookF className='cursor-pointer hover:scale-110 active:scale-90 transition' />
+                <RiInstagramFill className='cursor-pointer hover:scale-110 active:scale-90 transition' />
             </div>
         </div>
     );

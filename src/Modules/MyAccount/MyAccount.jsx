@@ -7,7 +7,7 @@ const MyAccount = () => {
 
             {/* Heading */}
             <h1
-                className="text-center text-4xl font-extrabold mb-8"
+                className="text-center text-2xl sm:text-4xl font-extrabold mb-8"
                 style={{
                     color: MyColors.main,
                     fontFamily: 'Urbanist',

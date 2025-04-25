@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import ImageSlider from '../../Components/ImageSlider/ImageSlider';
 import MyImages from '../../Constants/MyImages.js';
 import MyColors from '../../Constants/MyColors.js';
-import TicketCard from '../../Components/TicketCard/TicketCard.jsx';
+import OfferCard from '../../Components/OfferCard/OfferCard.jsx';
 
 const buttonStyles = {
   base: "px-6 py-2 bg-gradient-to-b from-[#FFFFFF] to-[#CACACA] text-white rounded-sm sm:rounded-md shadow-lg transform transition-all duration-300 cursor-pointer active:scale-90 focus:outline-none",
@@ -73,31 +73,7 @@ const GuestHome = () => {
           </div>
 
           {/* Ticket Card */}
-          <TicketCard
-            size="large"
-            onNumberSelect={(num) => console.log("Selected Number:", num)}
-            bottomContent={
-              <div className="flex justify-center mt-6">
-                <button
-                onClick={() => {
-                console.log('Login Button Clicked');
-                navigate('/userhome');
-              }}
-                  className={`${buttonStyles.base} ${buttonStyles.width} ${buttonStyles.font}`}
-                  style={{
-                    color: buttonStyles.color,
-                    border: buttonStyles.border.style,
-                    backgroundClip: 'padding-box',
-                    boxShadow: buttonStyles.boxShadow,
-                    fontFamily: buttonStyles.fontFamily,
-                  }}
-                >
-                  Proceed to Play
-                </button>
-              </div>
-            }
-          />
-
+          <OfferCard />
 
         </div>
 

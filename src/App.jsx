@@ -7,6 +7,7 @@ import UserHome from './Modules/Home/UserHome.jsx'
 import Login from './Modules/Login&Signup/Login.jsx'
 import Signup from './Modules/Login&Signup/Signup.jsx'
 import MyAccount from './Modules/MyAccount/MyAccount.jsx'
+import CartScreen from './Modules/Cart/CartScreen.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 
 import Button from './Components/Buttons/Button.jsx'
@@ -60,7 +61,7 @@ function App() {
           //     My Account
           //   </p>
 
-          //   <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white ml-3">
+          //   <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white">
           //     <img
           //       src={AcharImage}
           //       alt="Profile"
@@ -79,6 +80,7 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/myaccount' element={<MyAccount />} />
         <Route path='/userhome' element={<UserHome />} />
+        <Route path='/cart' element={<CartScreen />} />
 
       </Routes>
       <Footer />

@@ -11,14 +11,16 @@ const Button = ({
 }) => {
 
   const baseClasses = `
-  px-5 py-2 sm:px-8 sm:py-3 md:px-10 md:py-3 
+  px-2 py-2 sm:px-2 sm:py-3 md:px-2 md:py-3 
   rounded-lg font-semibold 
   transition-transform duration-200 ease-out 
   text-center cursor-pointer 
   active:scale-90 focus:outline-none
 `;
 
-  const widthClass = fullWidth ? 'w-full' : 'w-fit';
+  const widthClass = fullWidth
+    ? 'w-full'
+    : 'w-[90px] sm:w-[120px] md:w-[120px] lg:w-[120px]';
 
   let styles = {
     fontFamily: 'Urbanist',

@@ -10,6 +10,8 @@ import RightRedBlurCoin from '../assets/Images/right_red_blur_coin.png';
 import WinSpinWheel from '../assets/Images/big_win_spin.png';
 import GoldenCoin from '../assets/Images/golden_coin.png';
 import HomeBg from '../assets/Images/home_bg.png';
+import BuyNowButton from '../assets/Images/buy_now_button.png';
+import NumberSqure from '../assets/Images/numbersqaure.png';
 
 const MyImages = {
     // Main Logo
@@ -38,6 +40,11 @@ const MyImages = {
     rightRedBlurCoin: RightRedBlurCoin,
     goldenCoin: GoldenCoin,
 
+    // Buttons
+    buyNowButton: BuyNowButton,
+
+    // Cart
+    numberSqaure: NumberSqure,
 }
 
 export default MyImages;

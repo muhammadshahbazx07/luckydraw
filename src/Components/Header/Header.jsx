@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa';
+import { RiInstagramFill, RiTwitterXFill } from 'react-icons/ri';
 import MyColors from '../../Constants/MyColors.js';
 import MyImages from '../../Constants/MyImages.js';
 
@@ -22,12 +23,12 @@ const Header = ({ rightContent = null }) => {
                 }}
             >
                 <div
-                    className='flex gap-4 text-xl'
+                    className='flex gap-4 text-xl'  
                     style={{ color: MyColors.white }}
                 >
-                    <FaTwitter className='cursor-pointer hover:scale-110 transition' />
-                    <FaFacebookF className='cursor-pointer hover:scale-110 transition' />
-                    <FaInstagram className='cursor-pointer hover:scale-110 transition' />
+                    <RiTwitterXFill className='cursor-pointer hover:scale-110 active:scale-90 transition' />
+                    <FaFacebookF className='cursor-pointer hover:scale-110 active:scale-90 transition' />
+                    <RiInstagramFill className='cursor-pointer hover:scale-110 active:scale-90 transition' />
                 </div>
             </div>
 
@@ -36,7 +37,7 @@ const Header = ({ rightContent = null }) => {
                 {/* Logo */}
                 <div
                 onClick={() => navigate('/')}
-                className='w-35 h-12 bg-no-repeat bg-contain cursor-pointer hover:scale-110 transition'
+                className='w-30 h-8 sm:h-10 bg-no-repeat justify-self-center bg-contain cursor-pointer hover:scale-110 active:scale-90 transition'
                 style={{
                     backgroundImage: `url(${MyImages.logo})`,
                 }}
