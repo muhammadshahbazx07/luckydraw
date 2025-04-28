@@ -140,8 +140,6 @@ const CartScreen = () => {
                         Add Funds & Play
                     </Button>
                 </div>
-
-
             </div>
         </div>
     );
